@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Bio Express App</title>
+    </head>
+
+    <body>
+        <% about.forEach(function(about) { %>
+            <h2><%= about %></h2>
+        <% }) %>
+
+        <% skillsR.forEach(function(skillsR) { %>
+            <h2><%= skillsR %></h2>
+        <% }) %>
+
+        <% skills.forEach(function(skills) { %>
+            <ul>
+                <li><%= skills %></li>
+            </ul>
+        <% }) %>
+
+        <% hobbiesR.forEach(function(hobbiesR) { %>
+            <h2><%= hobbiesR %></h2>
+        <% }) %>
+        
+        <% hobbies.forEach(function(hobbies) { %>
+            <ul>
+                <li><%= hobbies %></li>
+            </ul>
+        <% }) %>
+
+
+    </body>
+</html>
