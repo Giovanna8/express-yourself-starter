@@ -1,0 +1,43 @@
+body {
+    background-image: url("blue-fade-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.name {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.about {
+    font-family: 'Dosis', sans-serif;
+}
+
+#col {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+#skills {
+    column-fill: balance;
+    width: 50%;
+}
+
+#hobbies {
+    column-fill: balance;
+    width: 50%;
+    }
+
+#footer {
+    font-family: 'Dosis', sans-serif;
+    text-decoration: overline;
+    margin-top: 300px
+}

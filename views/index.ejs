@@ -2,34 +2,55 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>My Bio Express App</title>
+        <link rel='stylesheet' href='/css/style.css' />
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Shadows+Into+Light" rel="stylesheet">
     </head>
 
     <body>
-        <% about.forEach(function(about) { %>
-            <h2><%= about %></h2>
-        <% }) %>
+        <center><img src="<%= image%>" class="img-responsive center block" /></center>
 
-        <% skillsR.forEach(function(skillsR) { %>
-            <h2><%= skillsR %></h2>
+        <div class="name">
+            <% name.forEach(function(name) { %>
+            <h1><center><%= name %></center></h1>
         <% }) %>
+        </div>
 
-        <% skills.forEach(function(skills) { %>
-            <ul>
-                <li><%= skills %></li>
-            </ul>
+        <div class="about">
+            <% about.forEach(function(about) { %>
+            <h2><center><%= about %></center></h2>
         <% }) %>
+        </div>
 
-        <% hobbiesR.forEach(function(hobbiesR) { %>
-            <h2><%= hobbiesR %></h2>
-        <% }) %>
-        
-        <% hobbies.forEach(function(hobbies) { %>
-            <ul>
-                <li><%= hobbies %></li>
-            </ul>
-        <% }) %>
+    <div id="col">
+        <div id="skills">
+            <% skillsR.forEach(function(skillsR) { %>
+                <h2><%= skillsR %></h2>
+            <% }) %>
+            <% skills.forEach(function(skills) { %>
+                <ul>
+                    <li> <%= skills %> </li>
+                </ul>
+            <% }) %>
+        </div>
 
+        <div id="hobbies">
+            <% hobbiesR.forEach(function(hobbiesR) { %>
+                <h2><%= hobbiesR %></h2>
+            <% }) %>
+            <% hobbies.forEach(function(hobbies) { %>
+                <ul>
+                    <li><%= hobbies %></li>
+                </ul>
+            <% }) %>
+        </div>
+    </div>
 
     </body>
+
+<div id="footer">
+    <footer> Running on node with express and ejs! </footer>
+</div>
+
 </html>
